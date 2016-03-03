@@ -1,0 +1,23 @@
+1. Create a new rails project.
+2. Copy icons to app/assets/images/icons folder.
+3. Create a sprites folder in app/assets/images folder.
+4. Add gem 'compass-rails' to Gemfile.
+5. bundle
+6. Rename application.css to application.scss
+7. rails g scaffold article title:string content:text
+8.
+In production.rb
+config.compass.generated_images_dir = "images/sprites"
+9.
+
+blog bparanj$ RAILS_ENV=production rake assets:precompile
+I, [2016-03-02T15:54:14.801362 #54589]  INFO -- : Writing /Users/bparanj/bs/blog/public/assets/icons/delete-58a8cfb8a3ddeb905a4f2633f0ff935bd8f9f847319288e8dbfe67571f5352bb.png
+I, [2016-03-02T15:54:14.810863 #54589]  INFO -- : Writing /Users/bparanj/bs/blog/public/assets/icons/edit-a453937ccbb9c26fc72da6e1b69c2452e5a34ca192bd8c719da6b234cb17d231.png
+I, [2016-03-02T15:54:14.814339 #54589]  INFO -- : Writing /Users/bparanj/bs/blog/public/assets/icons/new-db3128de110d4a3403d9c6f82f5d46be15a25c8e89ea5219c7767c74468cab9f.png
+I, [2016-03-02T15:54:14.817897 #54589]  INFO -- : Writing /Users/bparanj/bs/blog/public/assets/icons/save-28e96ca58ac48d540202be20b4d3d846fd019b9c48b8d11ff5d8cabdbd1a15e2.png
+I, [2016-03-02T15:54:17.499196 #54589]  INFO -- : Writing /Users/bparanj/bs/blog/public/assets/application-0362f38a3e53ca0933d0b7eb565b6c3a173fa099d52f1f29d13abdfaee97abc9.js
+I, [2016-03-02T15:54:17.500005 #54589]  INFO -- : Writing /Users/bparanj/bs/blog/public/assets/application-0362f38a3e53ca0933d0b7eb565b6c3a173fa099d52f1f29d13abdfaee97abc9.js.gz
+I, [2016-03-02T15:54:17.906602 #54589]  INFO -- : Writing /Users/bparanj/bs/blog/public/assets/application-a37caa3a390317fae10266e199f9c96321cfc9dc1c853f4f23c54c7fc50b7407.css
+I, [2016-03-02T15:54:17.906858 #54589]  INFO -- : Writing /Users/bparanj/bs/blog/public/assets/application-a37caa3a390317fae10266e199f9c96321cfc9dc1c853f4f23c54c7fc50b7407.css.gz
+
+10. 
