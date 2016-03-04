@@ -10,3 +10,14 @@ In production.rb
 config.compass.generated_images_dir = "app/assets/images/sprites"
 9. rake assets:precompile
 10. Add app/assets/images/sprites/* to gitignore.
+
+
+
+
+
+Started GET "/articles/1" for ::1 at 2016-03-03 16:42:19 -0800
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"1"}
+  Article Load (0.1ms)  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 1]]
+  CACHE (0.0ms)  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered articles/show.html.erb within layouts/application (0.3ms)

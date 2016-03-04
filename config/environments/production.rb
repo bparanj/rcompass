@@ -75,7 +75,6 @@ Rails.application.configure do
   config.log_formatter = ::Logger::Formatter.new
   
   config.assets.enabled = true
-  config.assets.initialize_on_precompile = false
   config.compass.generated_images_dir = "app/assets/images/sprites"
   
   # Do not dump schema after migrations.
